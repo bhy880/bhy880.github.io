@@ -3,13 +3,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
 body {
-  font-family: Arial, sans-serif;
+  background-image: url("Kuvat/taustakuva.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+  {font-family: Arial, sans-serif;
   background: url('your-forest-image.jpg') no-repeat center center fixed;
   background-size: cover;
   background-color: #8a8c84;
   color:    #faf7f7;
   line-height: 1.6;
-}
+  }
+
 
 h1 {
     font-family: 'Playfair Display', serif;
@@ -26,4 +32,3 @@ font-family: 'Montserrat', sans-serif;
   padding: 15px;
   border-radius: 8px;
 }
-
