@@ -15,6 +15,11 @@ a {
   text-decoration: none;
 }
 
+header a,
+nav a {
+  border-radius: 0 !important; 
+}
+
 header a {
   display: inline-block;
   padding: 10px 14px;
@@ -102,6 +107,7 @@ p {
   transform: translateX(-50%);
 }
 
+/* Responsive navigation */
 nav {
   display: flex;
   justify-content: center;
@@ -110,26 +116,27 @@ nav {
   background-color: #181818;
   padding: 18px 0;
   margin-bottom: 32px;
-  position: fixed;        
-  top: 0;                 
+  position: fixed;
+  top: 0;
   left: 0;
-  width: 100vw;           
-  z-index: 1000;          
+  width: 100vw;
+  z-index: 1000;
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
 nav a {
   display: inline-block;
-  padding: 10px 24px;
+  padding: 10px 14px;
   background-color: #282828;
   color: #faf7f7;
-  border-radius: 0;
+  border-radius: 6px;
   margin: 0 4px;
   font-size: 1rem;
   font-weight: 500;
   box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  transition: background-color 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+  transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
   vertical-align: middle;
+  text-align: center;
 }
 
 nav a.active,
@@ -139,4 +146,33 @@ nav a[aria-current="page"] {
   font-weight: 700;
   box-shadow: 0 4px 12px rgba(0,0,0,0.12);
   pointer-events: none;
+}
+
+ /* Mobiilityylit */
+@media (max-width: 600px) {
+  nav {
+    gap: 20px;
+    padding: 10px 0;
+  }
+  nav a {
+    font-size: 0.95rem;
+    margin: 0 2px;
+    min-width: 90px;
+  }
+  h1 {
+    font-size: 2.7rem;
+    margin-top: 10px;
+  }
+  .kuva1 {
+    max-width: 95vw;
+    margin-top: 24px;
+  }
+  .teksti1, .teksti2 {
+    padding: 0 4vw;
+  }
+  p {
+    font-size: 1rem;
+    padding: 12px 0;
+    margin-top: 16px;
+  }
 }
