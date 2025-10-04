@@ -51,14 +51,14 @@ body {
   background-color: #8a8c84;
   color:    #faf7f7;
   line-height: 1.6;
-  
+  margin-top: 70px;       /* Add space for fixed nav */
+}
 
 .teksti1 {
   text-align: center;
 }
 .teksti2 {
   text-align: center;
-}
 }
 .kuva1 {
   display: block;
@@ -104,10 +104,16 @@ nav {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 16px;
+  gap: 100px;
   background-color: #181818;
   padding: 18px 0;
   margin-bottom: 32px;
+  position: fixed;        
+  top: 0;                 
+  left: 0;
+  width: 100vw;           
+  z-index: 1000;          
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
 
 nav a {
