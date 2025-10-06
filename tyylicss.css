@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 
 
-
+/* Header-tyylit */
 header {
   font-family: 'Playfair Display', serif;
   color: #faf7f7;
@@ -15,25 +15,15 @@ a {
   text-decoration: none;
 }
 
+
+/* Poista linkkien oletuspyöristys */
 header a,
 nav a {
   border-radius: 0 !important; 
 }
 
-header a {
-  display: inline-block;
-  padding: 10px 14px;
-  background-color: #282828;
-  color: #faf7f7;
-  border-radius: 6px;
-  margin: 0 4px;
-  font-size:1rem;
-  font-weight: 500;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
-  transition: background-color 0.2s, box-shadow 0.2s, transform 0.2s;
-  vertical-align: middle;
-}
 
+/* Linkkien hover-efekti headerissa */
 header a:hover {
   background-color: #666;
   box-shadow: 0 4px 12px rgba(0,0,0,0.12);
@@ -42,7 +32,7 @@ header a:hover {
 }
 
 
-
+/* Yleiset tyylit */
 body {
   margin: 0;
   padding: 0;
@@ -56,16 +46,26 @@ body {
   background-color: #8a8c84;
   color:    #faf7f7;
   line-height: 1.6;
-  margin-top: 70px;       /* Add space for fixed nav */
+  margin-top: 70px;       
 }
-
+/* Tekstien keskitys */
 .teksti1 {
   text-align: center;
 }
 .teksti2 {
   text-align: center;
 }
+/* Kuvien asettelu riville */
+div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px; 
+  justify-content: center;
+}
+/* Kuvien tyylit */
 .kuva1 {
+  max-width: 220px;
+  height: auto;
   display: block;
   margin: 40px auto 0 auto; 
   width: 100%;
@@ -80,7 +80,7 @@ body {
     max-width: 600px;
   }
 }
-
+/* Otsikon tyylit */
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 4rem;
@@ -88,7 +88,7 @@ h1 {
     text-align: center;
     margin: 20px 0;
 }
-
+/* Paragraph tyylit */
 p {
   font-family: 'Montserrat', sans-serif;
   font-size: 1.5rem;
@@ -107,7 +107,21 @@ p {
   transform: translateX(-50%);
 }
 
-/* Responsive navigation */
+/* yhteystieto sivun kartta */
+.map-box {
+  
+  text-align: center;
+  width: fit-content;
+  margin: 40px auto 0 auto;
+}
+
+.map-box iframe {
+  display: block;
+  margin: 0 auto;
+  border: none;
+}
+
+/* Responsiivinen navigaattori */
 nav {
   display: flex;
   justify-content: center;
@@ -123,7 +137,7 @@ nav {
   z-index: 1000;
   box-shadow: 0 2px 8px rgba(0,0,0,0.12);
 }
-
+/* Navigaatiolinkkien tyylit */
 nav a {
   display: inline-block;
   padding: 10px 14px;
@@ -175,4 +189,9 @@ nav a[aria-current="page"] {
     padding: 12px 0;
     margin-top: 16px;
   }
+}
+
+/* Footer-tyylit */
+footer {
+  text-align: center;
 }
