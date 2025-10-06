@@ -193,5 +193,88 @@ nav a[aria-current="page"] {
 
 /* Footer-tyylit */
 footer {
-  text-align: center;
+  background-color: #1a1919;
+  padding: 2rem 1rem;
+  box-shadow: none;
 }
+
+.footer-rivi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.footer-rivi .copyright {
+  margin: 0;
+  font-size: 0.9rem;
+  text-align: center;
+  flex: 1;
+  background-color: transparent;
+  padding: 0;
+  width: auto;
+  max-width: none;
+  position: static;
+  transform: none;
+  line-height: 1;
+}
+
+.sosiaalinen-media {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.sosiaalinen-media img {
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  aspect-ratio: 1 / 1;
+  display: block;
+  margin-top: 0;
+}
+
+.sosiaalinen-media a:hover img {
+  transform: scale(1.2);
+}
+.yhteys-linkki {
+  font-size: 1rem;
+  color: #faf7f7;
+  text-decoration: none;
+}
+.yhteys-linkki {
+  background-color: #282828;
+  padding: 8px 12px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.yhteys-linkki:hover {
+  background-color: #666;
+  transform: translateY(-2px);
+}
+
+.footer-oikea {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.yhteys-linkki {
+  font-size: 1rem;
+  color: #faf7f7;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+  
+
+
