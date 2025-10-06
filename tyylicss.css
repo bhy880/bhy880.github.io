@@ -5,7 +5,7 @@
 /* Header-tyylit */
 header {
   font-family: 'Playfair Display', serif;
-  color: #faf7f7;
+  color: #f3f3f3;
   padding: 10px 0;
   text-align: center;
 }
@@ -37,7 +37,7 @@ body {
   margin: 0;
   padding: 0;
  font-family: Arial, sans-serif;
-   background-image: url("Kuvat ja Logo/taustakuva1.jpg");
+   background-image: url("Kuvat ja Logo/BackgroundCamera-2.jpg");
    background-size: contain;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -84,7 +84,7 @@ div {
 h1 {
     font-family: 'Playfair Display', serif;
     font-size: 4rem;
-    color: #282828;
+    color: #e6e6e6;
     text-align: center;
     margin: 20px 0;
 }
